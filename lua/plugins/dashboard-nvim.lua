@@ -20,7 +20,7 @@ return {
                 },
                 center = {
                     {
-                        icon = '',
+                        icon = '󰱼 ',
                         icon_hl = 'find',
                         desc = 'Find file',
                         desc_hl = 'find',
@@ -30,7 +30,7 @@ return {
                         action = 'Telescope find_files',
                     },
                     {
-                        icon = '',
+                        icon = '󱎸 ',
                         icon_hl = 'find',
                         desc = 'Live grep',
                         desc_hl = 'find',
@@ -40,7 +40,7 @@ return {
                         action = 'Telescope live_grep',
                     },
                     {
-                        icon = '',
+                        icon = '󰙰 ',
                         icon_hl = 'find',
                         desc = 'Recent files',
                         desc_hl = 'find',
@@ -50,7 +50,7 @@ return {
                         action = 'Telescope oldfiles',
                     },
                     {
-                        icon = '',
+                        icon = '󰆪 ',
                         icon_hl = 'manage',
                         desc = 'Mason',
                         desc_hl = 'manage',
@@ -60,17 +60,17 @@ return {
                         action = 'Mason',
                     },
                     {
-                        icon = '',
+                        icon = ' ',
                         icon_hl = 'manage',
                         desc = 'Lazy',
                         desc_hl = 'manage',
-                        key = 'L',
+                        key = '<leader>L',
                         key_hl = 'manage',
                         key_format = ' [%s]',
                         action = 'Lazy',
                     },
                     {
-                        icon = '',
+                        icon = '󰗼 ',
                         icon_hl = 'manage',
                         desc = 'Exit',
                         desc_hl = 'manage',
