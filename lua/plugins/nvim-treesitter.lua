@@ -1,17 +1,17 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate",
+	'nvim-treesitter/nvim-treesitter',
+	build = ':TSUpdate',
 	opts = {
 		ensure_installed = {
-			"lua",
-			"typescript",
-			"dockerfile",
-			"go",
-			"javascript",
-			"python",
-			"help",
-			"ruby",
-            "vim",
+			'lua',
+			'typescript',
+			'dockerfile',
+			'go',
+			'javascript',
+			'python',
+			'help',
+			'ruby',
+            'vim',
 		},
         auto_install = true,
 		highlight = {
