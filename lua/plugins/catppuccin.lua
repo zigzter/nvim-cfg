@@ -6,13 +6,18 @@ return {
         require('catppuccin').setup({
             flavour = 'macchiato',
             integrations = {
-                dashboard = true,
                 cmp = true,
-                treesitter = true,
+                dashboard = true,
+                harpoon = true,
+                mason = true,
+                mini = {
+                    enabled = true,
+                },
                 noice = true,
                 telescope = {
-                    enabled = true
+                    enabled = true,
                 },
+                treesitter = true,
             },
         })
     end,
