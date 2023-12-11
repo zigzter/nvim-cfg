@@ -9,6 +9,7 @@ return {
                 cmp = true,
                 dashboard = true,
                 harpoon = true,
+                leap = true,
                 mason = true,
                 mini = {
                     enabled = true,
