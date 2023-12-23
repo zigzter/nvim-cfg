@@ -1,22 +1,24 @@
 return {
 	'nvim-treesitter/nvim-treesitter',
 	build = ':TSUpdate',
-	opts = {
-		ensure_installed = {
-			'lua',
-			'typescript',
-			'dockerfile',
-			'go',
-			'javascript',
-			'python',
-			'help',
-			'ruby',
-            'vim',
-		},
-        auto_install = true,
-		highlight = {
-			enable = true,
-			additional_vim_regex_highlighting = false,
-		},
-	}
+    config = function()
+        require('nvim-treesitter.configs').setup({
+            ensure_installed = {
+                'lua',
+                'typescript',
+                'dockerfile',
+                'go',
+                'html',
+                'javascript',
+                'python',
+                'ruby',
+                'vim',
+            },
+            auto_install = true,
+            highlight = {
+                enable = true,
+                additional_vim_regex_highlighting = false,
+            },
+        })
+    end,
 }
