@@ -50,13 +50,19 @@ return {
         end
 
         lspconfig.dockerls.setup({})
-        lspconfig.tsserver.setup({})
-        lspconfig.eslint.setup({})
+        lspconfig.tsserver.setup({
+            on_attach = on_attach
+        })
+        lspconfig.eslint.setup({
+            on_attach = on_attach
+        })
         lspconfig.gopls.setup({
             cmd = { "gopls", "--remote=auto" },
             on_attach = on_attach,
         })
-        lspconfig.html.setup({})
+        lspconfig.html.setup({
+            on_attach = on_attach
+        })
         lspconfig.jsonls.setup({})
         lspconfig.lua_ls.setup({
             capabilities = capabilities,
