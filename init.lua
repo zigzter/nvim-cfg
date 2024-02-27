@@ -30,7 +30,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "gitcommit",
+	callback = function()
+		vim.opt_local.colorcolumn = "50,72"
+	end,
+})
+
 require("lazy").setup("plugins")
 
 vim.cmd.colorscheme("catppuccin")
-
