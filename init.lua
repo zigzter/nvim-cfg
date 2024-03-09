@@ -16,6 +16,8 @@ vim.opt.termguicolors = true
 
 vim.opt.updatetime = 50
 
+vim.opt.scrolloff = 5
+
 -- lazy.nvim setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -30,6 +32,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- set 50 and 72 char limit columns on gitcommits
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "gitcommit",
 	callback = function()
