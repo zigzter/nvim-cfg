@@ -49,24 +49,32 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		lspconfig.dockerls.setup({})
+		lspconfig.dockerls.setup({
+			capabilities = capabilities,
+		})
 		lspconfig.tsserver.setup({
 			on_attach = on_attach,
+			capabilities = capabilities,
 			settings = {
 				implicitProjectConfiguration = { checkJs = true },
 			},
 		})
 		lspconfig.eslint.setup({
 			on_attach = on_attach,
+			capabilities = capabilities,
 		})
 		lspconfig.gopls.setup({
+			capabilities = capabilities,
 			cmd = { "gopls", "--remote=auto" },
 			on_attach = on_attach,
 		})
 		lspconfig.html.setup({
+			capabilities = capabilities,
 			on_attach = on_attach,
 		})
-		lspconfig.jsonls.setup({})
+		lspconfig.jsonls.setup({
+			capabilities = capabilities,
+		})
 		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
@@ -78,6 +86,8 @@ return {
 				},
 			},
 		})
-		lspconfig.rubocop.setup({})
+		lspconfig.rubocop.setup({
+			capabilities = capabilities,
+		})
 	end,
 }
