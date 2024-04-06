@@ -12,6 +12,8 @@ return {
 				typescriptreact = { "prettier" },
 				go = { "gofumpt" },
 				lua = { "stylua" },
+				css = { "prettier" },
+				md = { "mdformat" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
